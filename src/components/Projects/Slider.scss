@@ -1,0 +1,21 @@
+.slider-wrapper{
+  position: relative;
+}
+
+.buttons{
+  button{
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0.100);
+    cursor: pointer;
+    color: #01be96;
+    border: none;
+    position: absolute;
+    top: 45%;
+    right: -1rem;
+  }
+
+  .back{
+    left: -1rem;
+  }
+}
