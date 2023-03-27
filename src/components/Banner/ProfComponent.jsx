@@ -29,21 +29,21 @@ const ProfComponent = () => {
             <Fade className="social-icons" direction="right" delay={1000} cascade damping={.3}>
               <Tooltip arrow title="GutHub">
                 <span>
-                  <a href="/">
+                  <a href="https://github.com/EzequielBrito99">
                     <GitHubIcon fontSize='small' />
                   </a>
                 </span>
               </Tooltip>
               <Tooltip arrow title="LinkedIn">
                 <span>
-                  <a href="/">
+                  <a href="https://www.linkedin.com/in/ezequiel-brito-navarro-a606a9252">
                     <LinkedInIcon fontSize='small' />
                   </a>
                 </span>
               </Tooltip>
               <Tooltip arrow title="CV">
                 <span>
-                  <a href="/">
+                  <a href="https://drive.google.com/drive/folders/15oOtQRvlCW_SwstKXpeV6AEgHrrmPI8Q?usp=share_link">
                     <FilePresentIcon fontSize='small' />
                   </a>
                 </span>

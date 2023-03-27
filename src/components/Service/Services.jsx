@@ -1,9 +1,9 @@
 import React from "react";
-// import { MdDesignServices } from "react-icons/md";
-// import { FiCodesandbox } from "react-icons/fi";
-// import { CgWebsite } from "react-icons/cg";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import PhonelinkIcon from '@mui/icons-material/Phonelink';
+import SettingsSystemDaydreamIcon from '@mui/icons-material/SettingsSystemDaydream';
 import './Services.scss';
 
 const Services = () => {
@@ -18,26 +18,23 @@ const Services = () => {
       <div className="cards">
         <Slide direction="left">
           <Card
-            // Icon={MdDesignServices}
-            title={"ui/ux designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            Icon={DesignServicesIcon}
+            title={"ui/ux"}
+            disc={`Design and development of user interfaces.`}
           />
         </Slide>
         <Slide direction="up">
           <Card
-            // Icon={FiCodesandbox}
-            title={"graphic designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            Icon={PhonelinkIcon}
+            title={"responsive"}
+            disc={`Development of responsive websites.`}
           />
         </Slide>
         <Slide direction="right">
           <Card
-            // Icon={CgWebsite}
-            title={"web designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            Icon={SettingsSystemDaydreamIcon}
+            title={"integration"}
+            disc={`Integration with APIs, using fect, axios, etc.`}
           />
         </Slide>
       </div>

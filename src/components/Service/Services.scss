@@ -14,7 +14,14 @@
 }
 
 .cards {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 4rem;
     gap: 1rem;
+
+    @media(min-width:640px){
+        display: flex;
+        
+        div{
+            width: 100%;
+        }
+    }
 }
