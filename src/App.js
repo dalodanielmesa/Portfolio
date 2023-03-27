@@ -1,7 +1,7 @@
 import Header from "./components/Banner/Header";
 import ProfComponent from "./components/Banner/ProfComponent";
 import Footer from "./components/Footer/Footer";
-import Projects from "./components/Projects/Projects";
+// import Projects from "./components/Projects/Projects";
 import Services from "./components/Service/Services";
 import './App.scss';
 

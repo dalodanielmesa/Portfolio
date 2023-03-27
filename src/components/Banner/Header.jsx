@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-// import { GiCandleFlame, GiCrossedBones } from "react-icons/gi";
-// import { FaBars } from "react-icons/fa";
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import CloseIcon from '@mui/icons-material/Close';
+import WebhookIcon from '@mui/icons-material/Webhook';
 import './Header.scss';
 
 const Header = () => {
@@ -16,15 +17,15 @@ const Header = () => {
     <div className='header-wrapper'>
       <div className='logo'>
         <span className='green'>
-          {/* <GiCandleFlame /> */}
+          <WebhookIcon />
           </span>
         <h1>Portfolio</h1>
       </div>
       <div>
         <div onClick={handleStatusBar} className={'bars ' + (bar?'bar-open':'')}>
-          {/* {
-            !bar ? <FaBars className='bar' /> : <GiCrossedBones className='bar'/>            
-          } */}
+          {
+            !bar ? <MenuOpenIcon className='bar' /> : <CloseIcon className='bar'/>            
+          }
         </div>
         <div className={'nav ' + (bar?'nav-open':'')}>
           <span onClick={handleStatusBar}><a href="#home">Home</a></span>
