@@ -51,9 +51,20 @@
     color: #fff;
     font-weight: 500;
     filter: drop-shadow(0px 10px 10px #01be9551);
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    -webkit-filter: drop-shadow(0px 10px 10px #01be9551);
 
-    :hover {
+    &:hover {
       filter: drop-shadow(0px 10px 10px #01be9570);
+      transform: translateX(5px);
+      -webkit-transform: translateX(5px);
+      -moz-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+      -o-transform: translateX(5px);
     }
   }
 }
@@ -104,7 +115,7 @@
       -moz-transform: translate(-50%, -153%);
       -ms-transform: translate(-50%, -153%);
       -o-transform: translate(-50%, -153%);
-}
+    }
   }
 }
 

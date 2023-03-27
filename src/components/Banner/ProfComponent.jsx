@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide } from "react-awesome-reveal";
+import { Slide, Fade } from "react-awesome-reveal";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FilePresentIcon from '@mui/icons-material/FilePresent';
@@ -26,7 +26,7 @@ const ProfComponent = () => {
           <a href='https://wa.me/message/ST66CS7X7BHZM1'>Let's talk</a>
           <div className="social">
             <p>Check out my</p>
-            <div className="social-icons">
+            <Fade className="social-icons" direction="right" delay={1000} cascade damping={.3}>
               <Tooltip arrow title="GutHub">
                 <span>
                   <a href="/">
@@ -48,7 +48,7 @@ const ProfComponent = () => {
                   </a>
                 </span>
               </Tooltip>
-            </div>
+            </Fade>
           </div>
         </div>
       </Slide>
