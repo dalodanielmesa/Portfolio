@@ -1,4 +1,4 @@
-@import '../settings.scss';
+@import '../../settings.scss';
 
 .card-wrapper {
     width: 100%;
@@ -41,11 +41,11 @@
 
         .icon {
             font-size: 3rem;
-            transition: transform, color .3s ease;
-            -webkit-transition: transform, color .3s ease;
-            -moz-transition: transform, color .3s ease;
-            -ms-transition: transform, color .3s ease;
-            -o-transition: transform, color .3s ease;
+            transition: transform .3s ease, color .3s ease;
+            -webkit-transition: transform .3s ease, color .3s ease;
+            -moz-transition: transform .3s ease, color .3s ease;
+            -ms-transition: transform .3s ease, color .3s ease;
+            -o-transition: transform .3s ease, color .3s ease;
 }
     }
 
