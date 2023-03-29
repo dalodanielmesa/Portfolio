@@ -1,11 +1,12 @@
 import React from "react";
-// import { MdAlternateEmail } from "react-icons/md";
-// import { CgProfile } from "react-icons/cg";
-// import { HiOutlineMailOpen } from "react-icons/hi";
-// import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-// import { BsFacebook, BsSlack } from "react-icons/bs";
-// import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FilePresentIcon from '@mui/icons-material/FilePresent';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import NorthIcon from '@mui/icons-material/North';
 import './Footer.scss';
 
 const Footer = () => {
@@ -18,105 +19,63 @@ const Footer = () => {
   return (
     <div className="footer-wrapper" id="footer">
       <div className="profile">
-        <Slide direction="left" delay={1}>
-          <h1>Portfolio</h1>
+        <Slide direction="right" delay={1}>
+          <h2>Con<span className="green">tact</span></h2>
         </Slide>
-        <div className="address">
-          <Slide direction="left">
-            <h1>Address:</h1>
-          </Slide>
-          <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
-          </Slide>
-        </div>
-        <div className="links">
-          <Slide direction="left">
-            <h1>Contact me directly:</h1>
-          </Slide>
-          <div>
-            <span>
-              {/* <FiPhoneCall /> */}
-            </span>
-            <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
-            </Slide>
+        <div className="flexbox">
+          <div className="links">
+            <Slide direction="left"><h1>Contact me <span className="green">directly:</span></h1></Slide>
+            <div>
+              <span className="green"><WhatsAppIcon /></span>
+              <Slide direction="left"><a href="#">Whatsapp</a></Slide>
+            </div>
+            <div>
+              <Slide direction="left">
+                <span className="green"><TelegramIcon /></span>
+              </Slide>
+              <Slide><a href="#">Telegram</a></Slide>
+            </div>
+            <div>
+              <Slide direction="left">
+                <span className="green"><MailOutlineIcon /></span>
+              </Slide>
+              <Slide><a href="mailto:ebritonavarro@gmail.com">Email</a></Slide>
+            </div>
           </div>
-          <div>
-            <Slide direction="left">
-              <span>
-                {/* <HiOutlineMailOpen /> */}
-              </span>
-            </Slide>
-            <Slide>
-              <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
-            </Slide>
-          </div>
-        </div>
-        <div className="profiles">
-          <Slide direction="left">
-            <h1>Check my profiles</h1>
-          </Slide>
-          <div className="icons">
-            <Zoom>
-              <span>
-                <a href="/">
-                  {/* <AiFillGithub /> */}
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  {/* <AiFillLinkedin /> */}
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  {/* <BsFacebook /> */}
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  {/* <BsSlack /> */}
-                </a>
-              </span>
-            </Zoom>
+          <div className="profiles">
+            <Slide direction="right"><h1>Check my <span className="green">profiles:</span></h1></Slide>
+            <div className="icons">
+              <Zoom>
+                <span>
+                  <a href="https://github.com/EzequielBrito99">
+                    <GitHubIcon fontSize='small' />
+                  </a>
+                </span>
+              </Zoom>
+              <Zoom>
+                <span>
+                  <a href="https://www.linkedin.com/in/ezequiel-brito-navarro-a606a9252">
+                    <LinkedInIcon fontSize='small' />
+                  </a>
+                </span>
+              </Zoom>
+              <Zoom>
+                <span>
+                  <a href="https://drive.google.com/drive/folders/15oOtQRvlCW_SwstKXpeV6AEgHrrmPI8Q?usp=share_link">
+                    <FilePresentIcon fontSize='small' />
+                  </a>
+                </span>
+              </Zoom>
+            </div>
+            <div>
+              <Fade>
+                <div className="arrowUp" onClick={scrollUp}>
+                  <NorthIcon />
+                </div>
+              </Fade>
+            </div>
           </div>
         </div>
-        <Fade>
-          <div className="arrowUp" onClick={scrollUp}>
-            {/* <AiOutlineArrowUp /> */}
-          </div>
-        </Fade>
-      </div>
-      <div className="form">
-        <Slide direction="right">
-          <form>
-            <div className="name">
-              <span>
-                {/* <CgProfile /> */}
-              </span>
-              <input type="text" placeholder="Fullname..." />
-            </div>
-            <div className="email">
-              <span>
-                {/* <MdAlternateEmail /> */}
-              </span>
-              <input type="email" placeholder="Email..." />
-            </div>
-            <div className="message">
-              <span className="messageIcon">
-                {/* <FiMail /> */}
-              </span>
-              <textarea cols="30" rows="10" placeholder="Message..."></textarea>
-            </div>
-            <button>Submit</button>
-          </form>
-        </Slide>
       </div>
     </div>
   );
