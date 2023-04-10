@@ -12,7 +12,7 @@ const Project = (props) => {
           {
             urlDemo
               ?
-              <a href={urlDemo} target='_blank'>demo</a>
+              <a href={urlDemo} target='_blank'>Live</a>
               :
               <span>private</span>
           }

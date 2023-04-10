@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 import Project from './Project';
 import WestIcon from '@mui/icons-material/West';
 import EastIcon from '@mui/icons-material/East';
-import './Slider.scss';
 import { projects } from '../../data/data';
+import './Slider.scss';
 
 var settings = {
   className: "center",

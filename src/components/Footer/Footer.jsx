@@ -19,31 +19,41 @@ const Footer = () => {
   return (
     <div className="footer-wrapper" id="footer">
       <div className="profile">
-        <Slide direction="right" delay={1}>
+        {/* <Slide direction="right" delay={1}> */}
           <h2>Con<span className="green">tact</span></h2>
-        </Slide>
+        {/* </Slide> */}
         <div className="flexbox">
           <div className="links">
-            <Slide direction="left"><h1>Contact me <span className="green">directly</span>:</h1></Slide>
+            {/* <Slide direction="left"> */}
+              <h1>Contact me <span className="green">directly</span>:</h1>
+            {/* </Slide> */}
             <div>
               <span className="green"><WhatsAppIcon /></span>
-              <Slide direction="left"><a href="https://wa.me/message/ST66CS7X7BHZM1" target='_blank'>Whatsapp</a></Slide>
+              {/* <Slide direction="left"> */}
+                <a href="https://wa.me/message/ST66CS7X7BHZM1" target='_blank'>Whatsapp</a>
+              {/* </Slide> */}
             </div>
             <div>
-              <Slide direction="left">
+              {/* <Slide direction="left"> */}
                 <span className="green"><TelegramIcon /></span>
-              </Slide>
-              <Slide><a href="https://t.me/ezequielbn" target='_blank'>Telegram</a></Slide>
+              {/* </Slide> */}
+              {/* <Slide> */}
+                <a href="https://t.me/ezequielbn" target='_blank'>Telegram</a>
+              {/* </Slide> */}
             </div>
             <div>
-              <Slide direction="left">
+              {/* <Slide direction="left"> */}
                 <span className="green"><MailOutlineIcon /></span>
-              </Slide>
-              <Slide><a href="mailto:ebritonavarro@gmail.com" target='_blank'>Email</a></Slide>
+              {/* </Slide> */}
+              {/* <Slide> */}
+                <a href="mailto:ebritonavarro@gmail.com" target='_blank'>Email</a>
+                {/* </Slide> */}
             </div>
           </div>
           <div className="profiles">
-            <Slide direction="right"><h1>Check my <span className="green">profiles</span>:</h1></Slide>
+            {/* <Slide direction="right"> */}
+              <h1>Check my <span className="green">profiles</span>:</h1>
+            {/* </Slide> */}
             <div className="icons">
               <Zoom>
                 <span>

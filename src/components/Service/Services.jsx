@@ -16,27 +16,27 @@ const Services = () => {
         <h1>What I Do</h1>
       </Slide>
       <div className="cards">
-        <Slide direction="left">
+        {/* <Slide direction="left"> */}
           <Card
             Icon={DesignServicesIcon}
             title={"ui/ux"}
             disc={`Design and development of user interfaces.`}
           />
-        </Slide>
-        <Slide direction="up">
+        {/* </Slide> */}
+        {/* <Slide direction="up"> */}
           <Card
             Icon={PhonelinkIcon}
             title={"responsive"}
             disc={`Development of responsive websites.`}
           />
-        </Slide>
-        <Slide direction="right">
+        {/* </Slide> */}
+        {/* <Slide direction="right"> */}
           <Card
             Icon={SettingsSystemDaydreamIcon}
             title={"integration"}
             disc={`Integration with APIs, using fect, axios, etc.`}
           />
-        </Slide>
+        {/* </Slide> */}
       </div>
     </div>
   );
