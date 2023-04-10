@@ -29,10 +29,10 @@ const Header = () => {
         </div>
         <div className={'nav ' + (bar?'nav-open':'')}>
           <span onClick={handleStatusBar}><a href="#home">Home</a></span>
-          <span onClick={handleStatusBar}><a href="#service">Services</a></span>
-          <span onClick={handleStatusBar}><a href="#project">Projects</a></span>
-          <span onClick={handleStatusBar}><a href="#client">Testimonials</a></span>
-          <span onClick={handleStatusBar}><a href="#footer">Portfolio</a></span>
+          <span onClick={handleStatusBar}><a href="#services">Services</a></span>
+          <span onClick={handleStatusBar}><a href="#skills">Skills</a></span>
+          <span onClick={handleStatusBar}><a href="#projects">Projects</a></span>
+          <span onClick={handleStatusBar}><a href="#footer">Contact</a></span>
         </div>
       </div>
     </div>

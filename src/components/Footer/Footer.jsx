@@ -27,19 +27,19 @@ const Footer = () => {
             <Slide direction="left"><h1>Contact me <span className="green">directly</span>:</h1></Slide>
             <div>
               <span className="green"><WhatsAppIcon /></span>
-              <Slide direction="left"><a href="#">Whatsapp</a></Slide>
+              <Slide direction="left"><a href="https://wa.me/message/ST66CS7X7BHZM1" target='_blank'>Whatsapp</a></Slide>
             </div>
             <div>
               <Slide direction="left">
                 <span className="green"><TelegramIcon /></span>
               </Slide>
-              <Slide><a href="#">Telegram</a></Slide>
+              <Slide><a href="https://t.me/ezequielbn" target='_blank'>Telegram</a></Slide>
             </div>
             <div>
               <Slide direction="left">
                 <span className="green"><MailOutlineIcon /></span>
               </Slide>
-              <Slide><a href="mailto:ebritonavarro@gmail.com">Email</a></Slide>
+              <Slide><a href="mailto:ebritonavarro@gmail.com" target='_blank'>Email</a></Slide>
             </div>
           </div>
           <div className="profiles">
@@ -47,21 +47,21 @@ const Footer = () => {
             <div className="icons">
               <Zoom>
                 <span>
-                  <a href="https://github.com/EzequielBrito99">
+                  <a href="https://github.com/EzequielBrito99" target='_blank'>
                     <GitHubIcon fontSize='small' />
                   </a>
                 </span>
               </Zoom>
               <Zoom>
                 <span>
-                  <a href="https://www.linkedin.com/in/ezequiel-brito-navarro-a606a9252">
+                  <a href="https://www.linkedin.com/in/ezequiel-brito-navarro-a606a9252" target='_blank'>
                     <LinkedInIcon fontSize='small' />
                   </a>
                 </span>
               </Zoom>
               <Zoom>
                 <span>
-                  <a href="https://drive.google.com/drive/folders/15oOtQRvlCW_SwstKXpeV6AEgHrrmPI8Q?usp=share_link">
+                  <a href="https://drive.google.com/drive/folders/15oOtQRvlCW_SwstKXpeV6AEgHrrmPI8Q?usp=share_link" target='_blank'>
                     <FilePresentIcon fontSize='small' />
                   </a>
                 </span>
@@ -77,7 +77,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p>Web developed by Ezequiel Brito</p>
     </div>
   );
 };

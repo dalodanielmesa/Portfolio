@@ -23,27 +23,27 @@ const ProfComponent = () => {
             my skills to create responsive, intuitive and visually appealing
             websites.
           </p>
-          <a href='https://wa.me/message/ST66CS7X7BHZM1'>Let's talk</a>
+          <a href='https://wa.me/message/ST66CS7X7BHZM1' target='_blank'>Let's talk</a>
           <div className="social">
             <p>Check out my</p>
             <Fade className="social-icons" direction="right" delay={1000} cascade damping={.3}>
               <Tooltip arrow title="GutHub">
                 <span>
-                  <a href="https://github.com/EzequielBrito99">
+                  <a href="https://github.com/EzequielBrito99" target='_blank'>
                     <GitHubIcon fontSize='small' />
                   </a>
                 </span>
               </Tooltip>
               <Tooltip arrow title="LinkedIn">
                 <span>
-                  <a href="https://www.linkedin.com/in/ezequiel-brito-navarro-a606a9252">
+                  <a href="https://www.linkedin.com/in/ezequiel-brito-navarro-a606a9252" target='_blank'>
                     <LinkedInIcon fontSize='small' />
                   </a>
                 </span>
               </Tooltip>
               <Tooltip arrow title="CV">
                 <span>
-                  <a href="https://drive.google.com/drive/folders/15oOtQRvlCW_SwstKXpeV6AEgHrrmPI8Q?usp=share_link">
+                  <a href="https://drive.google.com/drive/folders/15oOtQRvlCW_SwstKXpeV6AEgHrrmPI8Q?usp=share_link" target='_blank'>
                     <FilePresentIcon fontSize='small' />
                   </a>
                 </span>
@@ -55,7 +55,7 @@ const ProfComponent = () => {
       <Slide direction="right">
         <div className="profile">
           <img
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png"
+            src={`${process.env.PUBLIC_URL}/assets/banner/bannerImage.svg`}
             alt="profile"
           />
         </div>

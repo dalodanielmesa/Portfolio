@@ -8,7 +8,7 @@ import './Services.scss';
 
 const Services = () => {
   return (
-    <div className="services-wrapper" id="service">
+    <div className="services-wrapper" id="services">
       <Slide direction="down">
         <h4>
           My <span className="green">services</span>

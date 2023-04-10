@@ -8,7 +8,7 @@ const Skills = () => {
   const skills = ['html', 'css', 'bootstrap', 'sass', 'javascript', 'react', 'redux', 'git', 'github'];
 
   return (
-    <div className='skills-wrapper'>
+    <div id='skills' className='skills-wrapper'>
       <h4>
         My <span className="green">skills</span>
       </h4>

@@ -5,7 +5,7 @@ import './Projects.scss';
 
 const Projects = () => {
   return (
-    <div className='projects-wrapper' id='project'>
+    <div className='projects-wrapper' id='projects'>
       <Zoom>
         <h1>Recent <span className="green">Projects</span></h1>
         <p>In this section some of my latest projects appear, all of them have been developed with the mobile first methodology.</p>
