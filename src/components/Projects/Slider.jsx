@@ -1,31 +1,10 @@
 import React, { useRef } from 'react'
 import Slider from 'react-slick';
 import Project from './Project';
-// import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import WestIcon from '@mui/icons-material/West';
+import EastIcon from '@mui/icons-material/East';
 import './Slider.scss';
-
-let data = [
-  {
-    img: "https://res.cloudinary.com/ghazni/image/upload/v1661324124/Yt-portfolio/ui5_mnvdaw.png",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-  },
-  {
-    img: "https://res.cloudinary.com/ghazni/image/upload/v1661324074/Yt-portfolio/ui4_jku3ol.png",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-  },
-  {
-    img: "https://res.cloudinary.com/ghazni/image/upload/v1661323981/Yt-portfolio/ui2_wtollo.png",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-  },
-  {
-    img: "https://res.cloudinary.com/ghazni/image/upload/v1661323980/Yt-portfolio/ui3_akynn4.png",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-  },
-  {
-    img: "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-  }
-];
+import { projects } from '../../data/data';
 
 var settings = {
   className: "center",
@@ -69,7 +48,7 @@ var settings = {
 };
 const SliderComp = () => {
   const arrowRef = useRef(null);
-  let sliderProject = data.map((item, i) => (
+  let sliderProject = projects.map((item, i) => (
     <Project item={item} key={i} />
   ))
   return (
@@ -79,10 +58,10 @@ const SliderComp = () => {
       </Slider>
       <div className='buttons'>
         <button onClick={() => arrowRef.current.slickPrev()} className='back'>
-          {/* <IoIosArrowBack /> */}
+          <WestIcon />
         </button>
         <button onClick={() => arrowRef.current.slickNext()} className='next'>
-          {/* <IoIosArrowForward /> */}
+          <EastIcon />
         </button>
       </div>
     </div>

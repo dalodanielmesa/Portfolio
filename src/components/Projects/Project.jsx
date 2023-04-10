@@ -2,16 +2,22 @@ import React from 'react';
 import './Project.scss';
 
 const Project = (props) => {
-    const { img, disc } = props.item;
+  const { name, img, disc, urlDemo } = props.item;
   return (
     <div className='project-wrapper project'>
-        <img src={img} alt="project" />
-        <div className="disc">
-            <h1>Description</h1>
-            <p>{disc}
-            <a href="/">demo</a>
-            </p>
-        </div>
+      <img src={`${process.env.PUBLIC_URL}/assets/projects/${img}.png`} alt="project" />
+      <div className="disc">
+        <h1>{name}</h1>
+        <p>{disc}
+          {
+            urlDemo
+              ?
+              <a href={urlDemo} target='_blank'>demo</a>
+              :
+              <span>private</span>
+          }
+        </p>
+      </div>
     </div>
   )
 }

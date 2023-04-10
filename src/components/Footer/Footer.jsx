@@ -24,7 +24,7 @@ const Footer = () => {
         </Slide>
         <div className="flexbox">
           <div className="links">
-            <Slide direction="left"><h1>Contact me <span className="green">directly:</span></h1></Slide>
+            <Slide direction="left"><h1>Contact me <span className="green">directly</span>:</h1></Slide>
             <div>
               <span className="green"><WhatsAppIcon /></span>
               <Slide direction="left"><a href="#">Whatsapp</a></Slide>
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="profiles">
-            <Slide direction="right"><h1>Check my <span className="green">profiles:</span></h1></Slide>
+            <Slide direction="right"><h1>Check my <span className="green">profiles</span>:</h1></Slide>
             <div className="icons">
               <Zoom>
                 <span>
@@ -77,6 +77,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p>Web developed by Ezequiel Brito</p>
     </div>
   );
 };
